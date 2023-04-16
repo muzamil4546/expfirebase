@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "456733461093",
+    "project_id": "expfirebase-3811e",
+    "storage_bucket": "expfirebase-3811e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456733461093:android:483c45943b9b6b46fad48c",
+        "android_client_info": {
+          "package_name": "com.example.expfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456733461093-6vle643rmp79lb7jhhgufs3vcobgaqnq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnjGzOMBM0gRBCSv9GRhQidl4YQb7GTig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456733461093-6vle643rmp79lb7jhhgufs3vcobgaqnq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
