@@ -1,3 +1,4 @@
+import 'package:expfirebase/postLogin/postlogin_screen.dart';
 import 'package:expfirebase/utils/utils.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
@@ -24,6 +25,7 @@ class _LoginScreenState extends State<LoginScreen> {
     _auth.signInWithEmailAndPassword(email: emailController.text.toString(),
         password: passwordController.text.toString()).then((value){
           Utils().toastMessage(value.user!.email.toString());
+          Navigator.push(context, MaterialPageRoute(builder: (context) => PostLogin()));
     }).onError((error, stackTrace){
       debugPrint(error.toString());
       Utils().toastMessage(error.toString());
