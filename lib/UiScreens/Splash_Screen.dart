@@ -1,27 +1,24 @@
 import 'dart:async';
 
+import 'package:expfirebase/UiScreens/splash_services.dart';
 import 'package:flutter/material.dart';
 
 import 'login_Screen.dart';
 
-class splashScreen extends StatefulWidget {
-  const splashScreen({Key? key}) : super(key: key);
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({Key? key}) : super(key: key);
 
   @override
-  State<splashScreen> createState() => _splashScreenState();
+  State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _splashScreenState extends State<splashScreen> {
+class _SplashScreenState extends State<SplashScreen> {
+
+  SplashServices splashScreen = SplashServices();
+
   void initState(){
     super.initState();
-    Timer(Duration(seconds: 2),
-        ()=> Navigator.pushReplacement(
-            context, MaterialPageRoute(
-            builder: (context)
-            => LoginScreen(),
-        )
-        )
-    );
+    splashScreen.isLogin(context);
   }
   @override
   Widget build(BuildContext context) {

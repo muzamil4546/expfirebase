@@ -10,7 +10,7 @@ Future<void> main() async {
   runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
     // home: TestFirebase(),
-    home: splashScreen(),
+    home: SplashScreen(),
   )
   );
 }
