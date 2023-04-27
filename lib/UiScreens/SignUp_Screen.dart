@@ -82,8 +82,9 @@ class _SignUpState extends State<SignUp> {
                 },
               ),
                 SizedBox(height: 30),
-            ElevatedButton(
+        ElevatedButton(
               onPressed: (){
+                if(loading)return;
                   if(_formKey.currentState!.validate()){
                     setState(() {
                       loading = true;
@@ -102,7 +103,7 @@ class _SignUpState extends State<SignUp> {
                     });
                   }
               },
-              child: Text('Sign Up',
+              child:    loading?CircularProgress(): Text('Sign Up',
                   style: TextStyle(
                       fontSize: 20,
                       color: Colors.white)
